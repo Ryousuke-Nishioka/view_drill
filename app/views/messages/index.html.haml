@@ -1,45 +1,45 @@
-.header
-
 .chat-side
-   
-
   .side-header
-    .side-header_box
-      text-name
-    .side-hesder_box_new
-    =link_to "https://www.facebook.com/", class: "contents__btn contents__btn--facebook" do
-      = fa_icon 'edit', class: "contents__btn--icon"
-    =link_to "https://www.facebook.com/", class: "contents__btn contents__btn--facebook" do
-      = fa_icon 'cog', class: "contents__btn--icon"
- 
-
-  .group
-    samle
+    .side-header_message
+      textname!
+    =link_to "https://www.facebook.com/", class: "contents__btn" do
+      = fa_icon 'cog'
+    =link_to "https://www.facebook.com/", class: "contents__btn" do
+      = fa_icon 'edit'
+  
+  %ul.header-members
+    メンバー:
+    %li.member  メンバー名
+    %li.member  メンバー名
+    %li.member  メンバー名
 
 .chat-main
 
   .main-header
-    samle
     .main-header_edit-btn
       Edit
-  
 
   .messages
-    sss 
-    hello
-   
+    .upper-message
+      .upper-message__user-name
+        ry0sk
+      .upper-message__date
+        2017/04/04
+    .lower-meesage
+      .lower-message__content
+        メッセージ
 
   .form
-    .input-box
-      
-    .input-box_text
-      type a messages
-    .input-box_imege
-    =link_to "https://www.facebook.com/", class: "contents__btn contents__btn--facebook" do
-      = fa_icon 'imege', class: "contents__btn--icon"
-      
+    .form-message
+      type a message
+    =link_to "https://www.facebook.com/", class: "content__btn--black" do
+      = fa_icon 'image'
+
+      .submit-btn
+        Send
     
+   
+
+
     
-    .submit-btn 
-      Send
-      
+  

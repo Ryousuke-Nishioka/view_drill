@@ -1,16 +1,13 @@
-
-
-.chat-side{
+.chat-side {
   width: 300px;
   color: white;
   float: left;
 }
 
 .side-header{
+  background-color: #253141;
   height: 100px;
-  color: white;
   display: flex;
-  background-color:#253141;
   align-items: center;
   padding: 0 20px;
     padding-top: 0px;
@@ -19,39 +16,27 @@
     padding-left: 20px;
 }
 
-
-.side-header_box{
+.side-header_message{
   display: flex;
   justify-content: space-between;
   width: 100%;
   font-weight: bold;
 }
- .side-header_box_new{
-  &__btn{
-    padding-right:20px;
-    color: white;
-    margin-right:0.3rem; 
-   
-  
-  } 
-     
-   }
-  
- .fa::before {
-   color: #fff;
- }
 
-.group{
+
+.contents__btn{
+  margin-left: 5px;
+  color: white;
+  &--black{
+    display: inline;
+  }
+}
+
+.header-members{
   height: calc(100vh - 100px);
   background-color: #2f3e51;
   padding: 20px 20px 0;
-    padding-top: 20px;
-    padding-right: 20px;
-    padding-bottom: 0px;
-    padding-left: 20px;
   overflow: scroll;
-    overflow-x: scroll;
-    overflow-y: scroll;
 }
 
 .chat-main{
@@ -61,98 +46,82 @@
 
 .main-header{
   height: 100px;
-  width: 100%;
   padding: 0 40px;
   display: flex;
   justify-content: space-between;
   border-bottom: solid 1px #eee;
   overflow: scroll;
-  font-size: 30px;
+  
 }
-
 .main-header_edit-btn{
   height: 40px;
-  color: #38aef0;
+  color: skyblue;
   line-height: 40px;
   padding: 0 20px;
-    padding-top: 0px;
-    padding-right: 20px;
-    padding-bottom: 0px;
-    padding-left: 20px;
-    margin-top: 30px;
-  border: solid 1px #38aef0;
+  margin-top: 30px;
+  border: solid 1px skyblue;
   position: absolute;
   right: 40px;
-  font-size: 15px;
-
 }
 
 .messages{
   height: calc(100vh - 303px);
-  padding: 46px 40px 75px 40px;
+  padding: 46px 40px;
+    padding-top: 46px;
+    padding-right: 40px;
+    padding-bottom: 46px;
+    padding-left: 40px;
   background-color: #fafafa;
   overflow: scroll;
+    overflow-x: scroll;
+    overflow-y: scroll;
 }
-
-
 
 .form{
+  height: 90px;
   padding: 20px 40px;
-  position: fixed;
-  width: calc(100vw - 380px);
-  height: 50px;
-  background-color: lightgray;
+  background-color:lightgrey;
 }
 
-.input-box{
-  padding-left: 10px;
-  width: 890px;
+.form-message {
   height: 50px;
-  line-height: 50px;
-  color: lightslategray;
-  font-size: 16px;
-  border: none;
-  resize: none;
-  float: left;
-
-}
-
-.input-box_text{
-  text-align: center;
-  margin-top: -50px;
-  margin-right: 20px; 
-  width: 80%;
-  height: 50px;
-  line-height: 50px;
+  width: 70%;
+  margin-left: -20px;
+  margin-top: 20px;
+  padding: 0 40px 0 10px;
+    padding-top: 15px;
+    padding-right: 10px;
+    padding-bottom: 0px;
+    padding-left: 30px;
+  color: #434a54;
+  border-style: none;
   background-color: white;
-  float: left;
-  color: lightgray;
-    &__btn{
-      padding-right:20px;
-      color:black;
-     }
-
+}
+  .content__btn--black{
+    font-size: 30px;
+    position: absolute;
+    top: 94.5%;
+    right: 20%;
+    cursor: pointer;
+    color: black;
+    display: inline-block;
   }
 
-
-
-
-.submit-btn{
-  display: inline-block;
-  margin-top: -50px; 
-  padding-right: 40px;
-  padding-left: 30px;
-  line-height: 50px;
-  background-color: lightskyblue;
-  font-size: 16px;
-  color: white;
-  float: right;
-
-}
-
-
-
-
-
-
-
+  .submit-btn{
+    width: 100px;
+    height: 50px;
+    padding: 0 auto;
+      padding-top: 15px;
+      padding-right: 20px;
+      padding-bottom: 0px;
+      padding-left: 20px;
+    margin-left: 65px;
+    margin-right: -160px;
+    margin-top: -45px;
+    background-color: #38aef0;
+    color: white;
+    cursor: pointer;
+    font-size: 25px;
+    text-align: center;
+  
+  }
