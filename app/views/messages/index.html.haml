@@ -1,0 +1,39 @@
+.chat-side
+  .side-header
+    .side-header_message
+      textname!
+    =link_to "https://www.facebook.com/", class: "contents__btn" do
+      = fa_icon 'cog'
+    =link_to "https://www.facebook.com/", class: "contents__btn" do
+      = fa_icon 'edit'
+  
+  %ul.header-members
+    メンバー:
+    %li.member  メンバー名
+    %li.member  メンバー名
+    %li.member  メンバー名
+
+.chat-main
+
+  .main-header
+    .main-header_edit-btn
+      Edit
+
+  .messages
+    .upper-message
+      .upper-message__user-name
+        ry0sk
+      .upper-message__date
+        2017/04/04
+    .lower-meesage
+      .lower-message__content
+        メッセージ
+
+  .form
+    .form-message
+      type a message
+    =link_to "https://www.facebook.com/", class: "content__btn--black" do
+      = fa_icon 'image'
+
+      .submit-btn
+        Send

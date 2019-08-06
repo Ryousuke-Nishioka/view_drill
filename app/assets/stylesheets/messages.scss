@@ -1,0 +1,127 @@
+.chat-side {
+  width: 300px;
+  color: white;
+  float: left;
+}
+
+.side-header{
+  background-color: #253141;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+    padding-top: 0px;
+    padding-right: 20px;
+    padding-bottom: 0px;
+    padding-left: 20px;
+}
+
+.side-header_message{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  font-weight: bold;
+}
+
+
+.contents__btn{
+  margin-left: 5px;
+  color: white;
+  &--black{
+    display: inline;
+  }
+}
+
+.header-members{
+  height: calc(100vh - 100px);
+  background-color: #2f3e51;
+  padding: 20px 20px 0;
+  overflow: scroll;
+}
+
+.chat-main{
+  width: calc(100vw - 300px);
+  float: left;
+}
+
+.main-header{
+  height: 100px;
+  padding: 0 40px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: solid 1px #eee;
+  overflow: scroll;
+  
+}
+.main-header_edit-btn{
+  height: 40px;
+  color: skyblue;
+  line-height: 40px;
+  padding: 0 20px;
+  margin-top: 30px;
+  border: solid 1px skyblue;
+  position: absolute;
+  right: 40px;
+}
+
+.messages{
+  height: calc(100vh - 303px);
+  padding: 46px 40px;
+    padding-top: 46px;
+    padding-right: 40px;
+    padding-bottom: 46px;
+    padding-left: 40px;
+  background-color: #fafafa;
+  overflow: scroll;
+    overflow-x: scroll;
+    overflow-y: scroll;
+}
+
+.form{
+  height: 90px;
+  padding: 20px 40px;
+  background-color:lightgrey;
+}
+
+.form-message {
+  height: 50px;
+  width: 70%;
+  margin-left: -20px;
+  margin-top: 20px;
+  padding: 0 40px 0 10px;
+    padding-top: 15px;
+    padding-right: 10px;
+    padding-bottom: 0px;
+    padding-left: 30px;
+  color: #434a54;
+  border-style: none;
+  background-color: white;
+}
+  .content__btn--black{
+    font-size: 30px;
+    position: absolute;
+    top: 94.5%;
+    right: 20%;
+    cursor: pointer;
+    color: black;
+    display: inline-block;
+  }
+
+  .submit-btn{
+    width: 100px;
+    height: 50px;
+    padding: 0 auto;
+      padding-top: 15px;
+      padding-right: 20px;
+      padding-bottom: 0px;
+      padding-left: 20px;
+    margin-left: 65px;
+    margin-right: -160px;
+    margin-top: -45px;
+    background-color: #38aef0;
+    color: white;
+    cursor: pointer;
+    font-size: 25px;
+    text-align: center;
+  
+  }
